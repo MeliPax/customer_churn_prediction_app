@@ -1,0 +1,77 @@
+<html>
+   <body>
+      <form action = "/predict" method = "POST">
+         <p><h1>Fill this form to predict churn!</h1></p> <br>
+          <!--<div> </div>-->
+          <p>What's your Tenure:</p>
+         <p><input type = "text" name = "tenure" /></p>
+          <p>What's your Monthly Charges:</p>
+          <p><input type = "text" name = "m_charges" /></p>
+           <p>What's your Total Charges:</p>
+          <p><input type = "text" name = "tot_charges" /></p>
+          <p>Senior citizen?:</p>
+          <select name="s_citizen">
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+          </select>
+          <p>Partner:</p>
+          <select name="partner">
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+          </select>
+          <p>Dependent:</p>
+          <select name="dependents">
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+          </select>
+          <p>Contract:</p>
+          <select name="contract">
+              <option value="0">Month-to-month</option>
+              <option value="1">One year</option>
+              <option value="2">Two year</option>
+          </select>
+          <p>Tech Support:</p>
+            <select name="tec_support">
+              <option value="0">no</option>
+              <option value="2">yes</option>
+              <option value="1">No internet service</option>
+          </select>
+          <p>Online Security:</p>
+          <select name="online_sec">
+              <option value="2">yes</option>
+              <option value="0">no</option>
+              <option value="1">No internet service</option>
+          </select>
+          <p>Online Backup:</p>
+          <select name="online_backup">
+              <option value="2">yes</option>
+              <option value="0">no</option>
+              <option value="1">No internet service</option>
+          </select>
+
+          <p>DeviceProtection:</p>
+          <select name="device_prot">
+              <option value="0">No</option>
+              <option value="2">Yes</option>
+              <option value="1">No internet service</option>
+          </select>
+
+          <p>PaperlessBilling:</p>
+          <select name="pl_billing">
+              <option value="0">No</option>
+              <option value="1">Yes</option>
+          </select>
+
+          <p>PaymentMethod:</p>
+          <select name="payment_m">
+              <option value="0">Bank transfer (automatic)</option>
+              <option value="1">Credit card (automatic)</option>
+              <option value="3">Mailed check</option>
+              <option value="2">Electronic check</option>
+          </select>
+
+
+          <p><input type = "submit" value = "Predict" /></p>
+      </form>
+   </body>
+</html>
